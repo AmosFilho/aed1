@@ -1,0 +1,6 @@
+Primeiro devemos esclarecer que uma string nada mais é que um vetor de
+caracteres. Logo, o ponteiro para ela é o endereço do primeiro
+caracter desse vetor. O início e fim desse vetor são determinados, respectivamente,
+na memória através desse ponteiro e de um valor nulo('\0').
+Como exemplo dessa lógica, podemos usar aritmética de ponteiros para acessar
+outros elementos da string.
