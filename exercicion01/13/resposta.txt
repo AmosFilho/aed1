@@ -1,0 +1,2 @@
+v[3]: Representa o acesso ao elemento de índice 3 do vetor.
+v+3: Já essa chamada acessa somente o endereço de memória deste mesmo elemento.

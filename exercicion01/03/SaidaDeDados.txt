@@ -1,0 +1,5 @@
+nota 1: 10.0
+nota 2: 9.0
+nota 3: 8.0
+nota 4: 9.0
+Média: 9.0

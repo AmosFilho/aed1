@@ -1,0 +1,3 @@
+Pois permite alocação dinâmica de memória. Dito isso, seria possível trabalhar apenas com a quantidade necessária
+de memória evitando assim gastos desnecessários. Isso acontece através de uma alocação é possível adicionar e
+liberar memória quando solicitado tornando assim a quantidade de memória mais controlada evitando desperdício.

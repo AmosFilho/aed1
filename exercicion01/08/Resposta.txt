@@ -1,0 +1,11 @@
+Ponteiros são variáveis que "apontam" para o endereço de memória de outra variável. São utilizados 
+para permitir o acesso e manipulação dos valores de váriaveis de forma dinâmica. Na declaração deve-se
+dizer que tipo de dado é o endereço do ponteiro.
+Vetores estáticos são agrupamentos de variáveis de um mesmo tipo que podem ser acessados por um mesmo
+identificador. Para declarar um vetor é necessário especificar o tipo de dado, assim como o tamanho do vetor.
+Ambos podem ser utilizados para lidar com a manipulação de dados. Porém se você analisar a condição estática de
+um vetor, suas capacidades ficam limitadas. Isso se deve pelo fato que o vetor pode apenas lidar com um número
+pré-determinado de elementos. Isso se torna um desafio quando não sabemos a quantidade de elementos que o vetor
+pode possuir causando uma limitação de espaço de armazenamento devido a essa necessidade de especificação. Pois se 
+declararmos um valor acima do que vamos utilizar, a memória continua reservada para aquele vetor mesmo não sendo
+utilizada, já se precisamos de mais espaço devemos alterar manualmente o vetor para que comporte mais elementos.

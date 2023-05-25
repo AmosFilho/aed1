@@ -1,0 +1,4 @@
+Em essência sim, pois seu nome contém o endereço para o primeiro elemento
+do vetor. Logo ele inicialmente é um vetor. Porém são coisas distintas quando
+postos em prática. O ponteiro armazena o endereço de outra variável
+enquanto o vetor tem um bloco contíguo de memória alocado pelo compilador.
