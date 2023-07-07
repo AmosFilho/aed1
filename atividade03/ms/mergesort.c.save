@@ -1,0 +1,68 @@
+/*
+    Nome:   Amós do Carmo Moreira Filho
+    Mat:    2015310002
+    
+    Mergesort
+*/
+
+#include <stdio.h
+void merge(int arr[], int l, int m, int r) {
+    int i, j, k;
+    int n1 = m - l + 1;
+    int n2 = r - m;
+
+    // Cria arrays temporários
+    int L[n1], R[n2];
+
+    // Copia dados para os arrays temporários L[] e R[]
+    for (i = 0; i < n1; i++)
+        L[i] = arr[l + i];
+    for (j = 0; j < n2; j++)
+        R[j] = arr[m + 1 + j];
+
+    // Intercala os arrays temporários de volta ao array original arr[l..r]
+
+    i = 0;   // Índice inicial do primeiro subarray
+    j = 0;   // Índice inicial do segundo subarray
+    k = l;   // Índice inicial do array mesclado
+
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k] = L[i];
+            i++;
+        } else {
+            arr[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+
+    // Copia os elementos restantes de L[], se houver
+    while (i < n1) {
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+
+    // Copia os elementos restantes de R[], se houver
+    while (j < n2) {
+        arr[k] = R[j];
+        j++;
+        k++;
+    }
+}
+
+// Função principal que implementa o algoritmo Merge Sort
+void mergeSort(int arr[], int l, int r) {
+    if (l < r) {
+        // Encontra o ponto médio
+        int m = l + (r - l) / 2;
+
+        // Chama a função mergeSort() recursivamente para os subarrays esquerdo e direito
+        mergeSort(arr, l, m);
+        mergeSort(arr, m + 1, r);
+
+        // Intercala os subarrays
+        merge(arr, l, m, r);
+    }
+}
