@@ -1,4 +1,12 @@
-// C program to delete a node from AVL Tree
+/*
+   Curso: Sistemas de Informação
+   Disciplina: Algoritmos e Estruturas de Dados
+   Aluno: Amós do Carmo Moreira Filho
+   Matrícula: 2015310002
+*/
+
+// Este é um programa demonstrando o funcionamento de uma árvore AVL
+
 #include<stdio.h>
 #include<stdlib.h>
 
